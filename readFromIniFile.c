@@ -13,6 +13,7 @@ int main()
    // read the variable 'title' from 'states' and print it
    
    // On the function, I create a LPCSTR (heh!? Really? Yeah.)
+   // LPCTSTR is a const TCHAR string, (TCHAR being either a wide char or char depending on whether UNICODE is defined in your project)
    LPCSTR ini = "C:\\config.ini";
    
    //... and call GetPrivateProfileString method:
